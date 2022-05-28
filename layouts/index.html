@@ -1,0 +1,47 @@
+{{ define "body_class" }} home-template {{ end }}
+
+{{ define "main" }}
+
+    <header class="site-home-header">
+    {{ .Scratch.Set "background" .Params.feature_image }}
+    {{- partial "header-background.html" . -}}
+        <div class="inner">
+            <!-- Start looking at the partials -->
+            {{- partial "site-nav.html" . -}}
+            <div class="site-header-content">
+                <h1 class="site-title">
+                    {{ if $.Site.Params.logo }}
+                        <img class="site-logo" src="{{ $.Site.Params.logo }}" />
+                    {{ end }}
+                </h1>
+                <h2>{{ $.Site.Title }}</h2>
+                <h3 class="site-description">{{ $.Site.Params.subTitle }}</h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+        <div class="post-feed">
+            {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+            {{ range $index, $element := $pages }}
+
+            {{ if isset .Params "showcontenthome" }}
+                {{ if eq .Params.showcontenthome true }}
+                    {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
+                {{ end }}
+            {{ else if isset .Params "showcontent" }}
+                {{ if eq .Params.showcontent true }}
+                    {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
+                {{ end }}
+            {{ else }}
+                {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
+            {{ end }}
+            
+            {{ end }} <!-- range -->
+        </div>
+    </div>
+</main>
+
+{{ end }}

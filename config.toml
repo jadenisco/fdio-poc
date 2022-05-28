@@ -1,0 +1,63 @@
+baseURL = "https://johndenisco.org/"
+title = "John DeNisco"
+author = "John DeNisco"
+copyright = "Copyright © 2021, John DeNisco; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+
+theme = "hugo-casper3"
+
+[params]
+#  logo = "/images/logo.jpeg"
+  subTitle = "A Software Engineer of ~35 Years"
+  mainSections = ["home", "pmc"]
+
+[params.slider]
+    enable = true
+    manual = true # Setting manual to true renders the slide selection to only those where the post has a slider=true option enabled
+    num_features = 10 # The slider picks up the banner images from the N most recent posts, where num_features is N.
+
+[menu]
+  [[menu.main]]
+    identifier = "PMC"
+    name = "My PMC"
+    url = "/pmc"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "About"
+    name = "My Resume"
+    url = "/home/about"
+    weight = 20
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[privacy]
+  [privacy.vimeo]
+    disabled = true
+    simple = true
+
+  [privacy.twitter]
+    disabled = true
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = true
+    simple = true
+
+  [privacy.youtube]
+    disabled = true
+    privacyEnhanced = true
+
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true

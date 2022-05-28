@@ -1,0 +1,187 @@
+.post-content div {
+    width: 100%;
+}
+
+.site-logo {
+    border: solid;
+    max-height: 50px;
+    border-radius: 5%;
+}
+
+.post-card-image {
+    object-fit: contain;
+}
+
+.post-card-image-link {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.slider-header-background {
+    background: #c5d2d9 no-repeat 50%;
+	padding: 0 0 0 0;
+}
+
+.slider-header-content {
+    padding: 0 0;
+    min-height: 200px;
+    max-height: 450px
+}
+
+@media (prefers-color-scheme:dark) {
+    .slider-header-background {
+        background: #191b1f
+    }    
+
+	.post-full-content,
+	.post-card-content-link {
+        color: hsla(0, 0%, 100%, .75);
+	}
+}
+
+.wrap-element {
+    position: relative;
+    overflow: hidden;
+    padding-top: 45%;
+}
+
+.wrapped-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.post-slider-image {
+    width: 100%;
+    height: 200px;
+	object-fit: contain
+}
+
+.post-card-nav-bar {
+	flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.post-card-title {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.post-full-content a {
+	color: #26a8ed;
+	box-shadow: inset 0 -1px 0 #26a8ed;
+}
+
+.post-full-content a:hover {
+	background: gray;
+    color: black;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 gray
+}
+
+.single-page-nav-bar {
+	flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.my-button-large {
+    line-height: 2.0em;
+}
+
+.my-button-xlarge {
+    line-height: 2.5em;
+}
+
+.my-button {
+	text-align: center;
+	background:black;
+	color: #26a8ed;
+	float: right;
+	border-radius: 25%;
+	border: 1px solid gray;
+    letter-spacing: .2px;
+	padding: 2px 4px;
+	cursor: pointer;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+	box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+}
+
+.my-button:hover,
+.my-button:focus {
+	background: gray;
+	color: black;
+}
+
+.my-button:active {
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* =Featured Slider
+--------------------------------------------------------------*/
+
+.featured-slider, .featured-slider .slider-cycle {
+	position: relative;
+}
+
+.featured-slider .post-slider-image {
+	height: 400px;
+}
+
+@media (max-width:800px) {
+	.featured-slider .post-slider-image {
+		height: 225px;
+	}
+}
+
+@media (max-width:500px) {
+	.featured-slider .post-slider-image {
+		height: 225px;
+	}
+}
+
+.featured-text {
+	position: absolute;
+	bottom: 55px;
+	right: 30px;
+	text-align: right;
+	color: #fff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	padding: 20px;
+	background: #555;
+	background: rgba(0, 0, 0, 0.5);
+	margin-top: 4px;
+	float: right;
+	clear: right;
+	width: 35%;
+	text-shadow: 0 2px 2px rgba(0,0,0,0.4);
+	border-radius: 4px;
+	border: none;
+}
+
+.featured-text .featured-title {
+	font: 28px Helvetica, sans-serif;
+	font-weight: 200;
+	padding-bottom: 10px;
+	text-shadow: 0 2px 2px rgba(0,0,0,0.6);
+}
+
+.featured-text .featured-title a {
+	color: #fff;
+}
+
+.featured-text .featured-title a:hover,
+.featured-text .featured-title a:focus {
+	color: #26a8ed;
+}
