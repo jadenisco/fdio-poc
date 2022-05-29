@@ -1,0 +1,21 @@
+<nav class="site-nav">
+    <div class="site-nav-left">
+        {{ if $.Site.Params.logo }}
+            <a class="site-nav-logo" href="{{ $.Site.BaseURL }}"><img src="{{ $.Site.Params.logo }}" alt="{{ $.Site.Title }}" /></a>
+        {{ end }}
+
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+            {{ if .Params.subpagemenu }}
+            {{ range $index, $menuitem := .Params.subpagemenu }}
+                <li class="nav-home" role="menuitem"><a href="{{ $menuitem.url }}">{{- $menuitem.name -}}</a></li>
+            {{ end }} <!-- range subpagemenu -->
+            {{ else }}
+            {{ range $.Site.Menus.main }}
+                <li class="nav-home" role="menuitem"><a href="{{ .URL }}">{{- .Name -}}</a></li>
+            {{ end }} <!-- range SiteMenus -->
+            {{ end }} <!-- if subpagemenu -->
+            </ul>
+        </div>
+    </div>
+</nav>

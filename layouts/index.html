@@ -6,16 +6,11 @@
     {{ .Scratch.Set "background" .Params.feature_image }}
     {{- partial "header-background.html" . -}}
         <div class="inner">
-            <!-- Start looking at the partials -->
             {{- partial "site-nav.html" . -}}
             <div class="site-header-content">
-                <h1 class="site-title">
-                    {{ if $.Site.Params.logo }}
-                        <img class="site-logo" src="{{ $.Site.Params.logo }}" />
-                    {{ end }}
-                </h1>
-                <h2>{{ $.Site.Title }}</h2>
-                <h3 class="site-description">{{ $.Site.Params.subTitle }}</h3>
+                <h2 class="site-title"> {{ $.Site.Title }}</h2>
+                <h2></h2>
+                <h2 class="site-description">{{ $.Site.Params.subTitle }}</h2>
             </div>
         </div>
     </div>

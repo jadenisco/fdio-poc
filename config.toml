@@ -1,5 +1,5 @@
 baseURL = "https://johndenisco.org/"
-title = "John DeNisco"
+title = "The Fast Data Project (FD.io)"
 author = "John DeNisco"
 copyright = "Copyright © 2021, John DeNisco; all rights reserved."
 paginate = 3
@@ -10,8 +10,8 @@ enableInlineShortcodes = true
 theme = "hugo-casper3"
 
 [params]
-#  logo = "/images/logo.jpeg"
-  subTitle = "A Software Engineer of ~35 Years"
+  logo = "/images/fdio-color.svg"
+  subTitle = "An open-source project aimed at providing the world's fastest and most secure networking data plane through Vector Packet Processing (VPP)"
   mainSections = ["home", "pmc"]
 
 [params.slider]

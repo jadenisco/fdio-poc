@@ -8,6 +8,14 @@
     border-radius: 5%;
 }
 
+.site-header-content {
+	text-align: center;
+}
+
+.site-home-header .site-nav-logo {
+    display: revert;
+}
+
 .post-card-image {
     object-fit: contain;
 }
@@ -25,7 +33,7 @@
 .slider-header-content {
     padding: 0 0;
     min-height: 200px;
-    max-height: 450px
+    max-height: 450px;
 }
 
 @media (prefers-color-scheme:dark) {

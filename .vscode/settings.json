@@ -3,6 +3,10 @@
         "fdio",
         "jonathanjanssens",
         "nameofbranch",
-        "shortcodes"
+        "shortcodes",
+        "showcontent",
+        "showcontenthome",
+        "subpagemenu",
+        "thisshouldfail"
     ]
 }
