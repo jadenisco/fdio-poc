@@ -21,16 +21,10 @@ theme = "hugo-casper3"
 
 [menu]
   [[menu.main]]
-    identifier = "PMC"
-    name = "My PMC"
-    url = "/pmc"
+    identifier = "Use Cases"
+    name = "Use Cases"
+    url = ""
     weight = 10
-
-  [[menu.main]]
-    identifier = "About"
-    name = "My Resume"
-    url = "/home/about"
-    weight = 20
 
 [taxonomies]
   category = "categories"
