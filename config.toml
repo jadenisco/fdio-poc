@@ -1,4 +1,4 @@
-baseURL = "https://johndenisco.org/"
+baseURL = "https://fdio-poc.netlify.app/"
 title = "The Fast Data Project (FD.io)"
 author = "John DeNisco"
 copyright = "Copyright © 2021, John DeNisco; all rights reserved."
