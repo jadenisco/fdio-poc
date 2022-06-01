@@ -1,0 +1,75 @@
+<article class='post-card post
+    {{ if not (.context.Param "feature_image") }} no-image
+    {{ end }} '>
+
+    {{ $myURL := .context.Permalink }}
+    {{ if (.context.Param "alternate_link") }}
+        {{ $myURL = .context.Params.alternate_link }}
+    {{ end }}
+
+    <!-- Add top nav here -->
+    <header class="post-card-meta">
+    <div class="post-card-nav-bar">
+        <h2 class="post-card-title">{{ .context.Title }}</h2>
+        {{ if isset .context.Params "topnavbutton" }}
+            {{ $myURL := .context.Permalink }}
+            {{ if isset .context.Params.topnavbutton "url" }}
+                {{ $myURL = .context.Params.topnavbutton.url }}
+            {{ end }} <!-- isset topnavbutton url -->
+            {{ if isset .context.Params.topnavbutton "download" }}
+                <a class="my-button my-button-large" download="{{ .context.Params.topnavbutton.download }}">{{ .context.Param "topnavbutton.text" }}</a>
+            {{ else }}
+                <a class="my-button my-button-large" href="{{ $myURL }}">{{ .context.Param "topnavbutton.text" }}</a>
+            {{ end }}
+            {{ end }} <!-- isset topnavbutton -->
+    </div>    
+    </header>
+
+    {{ if .context.Param "feature_image" }}
+        <a class="post-card-image-link" href="{{ $myURL }}">
+            <img class="post-card-image"src='{{ .context.Param "feature_image" }}' alt="{{ .context.Title }}"/>
+        </a>
+    {{ end }}
+
+    <div class="post-card-content">   
+        <a class="post-card-content-link" href="{{ $myURL }}">
+            <h3 class="post-card-title">{{ .context.Params.description }}</h3>
+            <header class="post-card-header">
+                {{ with .context.Params.tags }}
+                    {{ $primaryTag := (index . 0) }}
+                    <div class="post-card-primary-tag">{{ $primaryTag }}</div>
+                {{ end }}
+            </header>
+            <section class="post-card-excerpt">
+                <p>{{ .context.Summary }}</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <div class="author-name-tooltip">{{ .context.Param "author" }}</div>
+                </li>
+            </ul>
+
+            <div class="post-card-nav-bar">
+                <div class="post-card-byline-content">
+                    {{ .context.Param "author" }}
+                    <span class="post-card-byline-date"><time datetime="{{ .context.Date.Format "2006-31-01" }}">{{ .context.Date.Format "2 January 2006" }}</time>
+                    <span class="bull">&bull;</span>
+                    <span>{{ .context.ReadingTime }} min read</span>
+                </div>
+                {{ if isset .context.Params "bottomnavbutton" }}
+                    {{ $myURL := .context.Permalink }}
+                    {{ if isset .context.Params.bottomnavbutton "url" }}
+                        {{ $myURL = .context.Params.bottomnavbutton.url }}
+                    {{ end }} <!-- isset bottomnavbutton url -->
+                    <a class="my-button" href="{{ $myURL }}">{{ .context.Param "bottomnavbutton.text" }}</a>
+                {{ end }} <!-- isset bottomnavbutton -->
+            </div>
+    </footer>
+    
+    </div><!-- post-card-content -->
+
+</article>
+    

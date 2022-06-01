@@ -1,5 +1,5 @@
 +++
-title = "Place Holder"
-description = "Place Holder."
+title = "Home"
+description = "The Home Page"
 author = "John DeNisco"
 +++

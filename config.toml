@@ -21,12 +21,30 @@ theme = "hugo-casper3"
 
 [menu]
   [[menu.main]]
-    identifier = "Use Cases"
+    identifier = "cases"
     name = "Use Cases"
     url = ""
     weight = 10
 
-[taxonomies]
+  [[menu.main]]
+    identifier = "resources"
+    name = "Resources"
+    url = ""
+    weight = 20
+
+  [[menu.main]]
+    identifier = "docs"
+    name = "Docs"
+    url = ""
+    weight = 30
+
+  [[menu.main]]
+    identifier = "news"
+    name = "News"
+    url = ""
+    weight = 40
+
+  [taxonomies]
   category = "categories"
   tag = "tags"
   series = "series"
