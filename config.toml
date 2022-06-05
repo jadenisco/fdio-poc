@@ -21,9 +21,9 @@ theme = "hugo-casper3"
 
 [menu]
   [[menu.main]]
-    identifier = "cases"
-    name = "Use Cases"
-    url = ""
+    identifier = "latest"
+    name = "The Latest"
+    url = "/latest"
     weight = 10
 
   [[menu.main]]

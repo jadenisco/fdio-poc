@@ -1,0 +1,15 @@
+{{ if .Param "feature_image" }}
+    <style type="text/css">
+        .responsive-header-img {
+            background-image: url('{{ .Param "feature_image" }}');
+        }
+    </style>
+    <div class="outer site-header-background responsive-header-img">
+{{ else }}
+    <style type="text/css">
+        .responsive-header-img {
+            background-image: url('{{ .Param "feature_image" }}');
+        }
+    </style>
+    <div class="outer site-header-background responsive-header-img">
+{{ end }}
