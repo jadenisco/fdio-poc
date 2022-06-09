@@ -11,6 +11,15 @@
     <header class="post-card-meta">
     <div class="post-card-nav-bar">
         <h2 class="post-card-title">{{ .context.Title }}</h2>
+        {{ partial "fontawesome.html" "youtube" }}
+        {{ partial "fontawesome.html" "car" }}
+        {{ partial "fontawesome.html" "download" }}
+        {{ partial "fontawesome.html" "file-pdf" }}
+        {{ partial "fontawesome.html" "file-powerpoint" }}
+        {{ partial "fontawesome.html" "file-image" }}
+        {{ partial "fontawesome.html" "cloud-arrow-down" }}
+    
+
         {{ if isset .context.Params "topnavbutton" }}
             {{ $myURL := .context.Permalink }}
             {{ if isset .context.Params.topnavbutton "url" }}
@@ -21,7 +30,7 @@
             {{ else }}
                 <a class="my-button my-button-large" href="{{ $myURL }}">{{ .context.Param "topnavbutton.text" }}</a>
             {{ end }}
-            {{ end }} <!-- isset topnavbutton -->
+        {{ end }} <!-- isset topnavbutton -->
     </div>    
     </header>
 
