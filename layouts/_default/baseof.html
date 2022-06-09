@@ -12,8 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" />
-
+    
     <!-- jadfix: Include if we are using the slider -->
     <!-- partial "slider-scripts.html" . -->
 
@@ -21,9 +20,15 @@
 <body class='{{ block "body_class" . }} {{ end }}'>
 
     <div class="site-wrapper">
-        {{- block "main" . }}{{- end }}
-
-        <footer class="site-footer outer">
+    {{ partial "fontawesome.html" "youtube" }}
+    {{ partial "fontawesome.html" "car" }}
+    {{ partial "fontawesome.html" "download" }}
+    {{ partial "fontawesome.html" "file-pdf" }}
+    {{ partial "fontawesome.html" "file-powerpoint" }}
+    {{ partial "fontawesome.html" "file-image" }}
+    {{ partial "fontawesome.html" "cloud-arrow-down" }}
+    
+    <footer class="site-footer outer">
             <div class="site-footer-content inner">
                 <section class="copyright"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> &copy; {{ .Date.Format "2006" }}</section>
                 <!-- jadfix: specify in config.toml -->

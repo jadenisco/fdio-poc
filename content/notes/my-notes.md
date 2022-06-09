@@ -30,6 +30,7 @@ These are some notes I have associated with this site.
   - Get Involved
   - Change the Layout
     - Neal will review issue [Fd.io Issue 112](https://github.com/FDio/site/issues/112), then propose a new layout.
+  - Fix Top Nav, need to add flex
 
 - Work on Front Page
   - Neal thinks the front page should display 3-4 real use case.
