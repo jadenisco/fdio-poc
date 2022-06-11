@@ -1,16 +1,13 @@
-<style>
-    .inline-svg {
-        display: inline-block;
-        height: 2.0rem;
-        width: 2.0rem;
-        top: 0.15rem;
-        position: relative;
-    }
-</style>
-
-<span class="inline-svg">
-{{- $fname:=print "fontawesome/" . ".svg" -}}
-{{- $path:="<path" -}}
-{{- $fill:="<path fill=\"currentColor\"" -}}
-{{ replace (readFile $fname) $path $fill | safeHTML }}
-</span>
+<a href="">
+    <span class="icon">
+        <i class="inline-svg">
+            {{- $fname:=print "fontawesome/" . ".svg" -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"currentColor\"" -}}
+            {{ replace (readFile $fname) $path $fill | safeHTML }}
+        </i>
+    </span>
+    <span class="icon-text">YouTube</span>
+</a>
+<!--
+-->
