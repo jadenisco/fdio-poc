@@ -4,8 +4,6 @@ date: "2022-02-06"
 author: "Nathan Skrzypczak"
 icons: [{icon: "youtube", text: "WebM", url: "https://ftp.osuosl.org/pub/fosdem/2022/D.network/kubernetes_networking_is_there_a_cheetah.webm"}, {icon: "file-pdf", color: "#F40F02", url: "https://fosdem.org/2022/schedule/event/kubernetes_networking_is_there_a_cheetah/attachments/slides/5080/export/events/attachments/kubernetes_networking_is_there_a_cheetah/slides/5080/FOSDEM_2022_Calico_VPP_is_there_a_cheetah_within_your_Calico.pdf"}]
 bottomnavbutton: {text: "Read More"}
-# time_slot = "4:30pm - 5:00pm CET"
-#type = "webinar"
 ---
 
 ## **Is there a cheetah within your Calico?**
@@ -20,5 +18,18 @@ That's how the Calico/VPP integration first came up, as a way to address perform
 
 We'll present how applications can leverage userspace interfaces, what this allows regarding network performance & additional functionalities and how the Calico/VPP integration makes this happen under the hood.
 
-### jadfix: Continue here with original
+### Speakers
 
+{{< speaker name="Chris Tomkins - Developer Advocate @ Project Calico/Tigera" twitter="TomkinsDa" linkedin="cdtomkins" img="/images/chris_tomkins.jpeg">}}
+Chris is a developer advocate at Project Calico/Tigera, where he champions user needs to support Project Calico’s users and contributor community.
+He has worked in networking since 2000. After realising that a per-device CLI is not a scalable solution for a large environment,
+he took an early interest in infrastructure-as-code approaches and large-scale automation and continues to have a special interest
+in pursuing technologies in these areas.
+{{< /speaker >}}
+
+{{< speaker name="Nathan Skrzypczak - Software Engineer @ Cisco" linkedin="sknat" twitter="skrnat" github="sknat" img="/images/nathan_skrzypczak.jpeg">}}
+Nathan is a software engineering at Cisco focusing on container networking & cloud app performance. After spending
+time deploying & scaling web apps he took interest in converting his love for script based infras into cloud native
+approaches, and now contributes to the building blocks of line rate container networking. He's a maintainer of the
+Calico/VPP integration, and of VPP's QUIC stack.
+{{< /speaker >}}
