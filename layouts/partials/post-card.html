@@ -12,16 +12,9 @@
     <div class="post-card-nav-bar">
         <h2 class="post-card-title">{{ .context.Title }}</h2>
 
-        {{ partial "fontawesome.html" "youtube" }}
-
-        <!--
-        {{ partial "fontawesome.html" "car" }}
-        {{ partial "fontawesome.html" "download" }}
-        {{ partial "fontawesome.html" "file-pdf" }}
-        {{ partial "fontawesome.html" "file-powerpoint" }}
-        {{ partial "fontawesome.html" "file-image" }}
-        {{ partial "fontawesome.html" "cloud-arrow-down" }}
-        -->
+        {{ range $ic := .context.Params.icons }}
+            {{- partial "fa.html" . -}}
+        {{ end }}
 
         {{ if isset .context.Params "topnavbutton" }}
             {{ $myURL := .context.Permalink }}

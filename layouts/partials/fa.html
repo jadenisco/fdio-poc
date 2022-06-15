@@ -1,0 +1,18 @@
+<a href={{ .url }}>
+    <span class="icon">
+        <span class="icon-text">{{ .text }}</span>
+        {{ if .color }}
+            {{- $st:= print "color:" .color -}}
+            <i class="inline-svg"  style={{ $st }} >
+        {{ else }}
+            <i class="inline-svg">
+        {{ end }}
+            {{- $fname := print "icons/" .icon ".svg" -}}
+            {{- $path := "<path" -}}
+            {{- $fill := "<path fill=\"currentColor\"" -}}
+            {{ replace (readFile $fname) $path $fill | safeHTML }}
+        </i>
+    </span>
+</a>
+<!--
+-->

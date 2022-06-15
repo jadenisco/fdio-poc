@@ -1,0 +1,31 @@
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+
+            {{- partial "read-next.html" . -}}
+
+            {{ with .PrevInSection}}
+                <br>
+                {{ if isset .Params "showcontent" }}
+                    {{ if eq .Params.showcontent true }}
+                        {{- partial "post-card.html" (dict "context" . "index" 1 "john" 2) -}}
+                    {{ end }}
+                {{ else }}
+                        {{- partial "post-card.html" (dict "context" . "index" 1 "john" 2) -}}
+                {{ end }}
+            {{end}}
+
+            {{ with .NextInSection}}
+                <br>
+                {{ if isset .Params "showcontent" }}
+                    {{ if eq .Params.showcontent true }}
+                    {{- partial "post-card.html" (dict "context" . "index" 1 "john" 2) -}}
+                    {{ end }}
+                {{ else }}
+                    {{- partial "post-card.html" (dict "context" . "index" 1 "john" 2) -}}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</aside>

@@ -42,3 +42,4 @@ These are some notes I have associated with this site.
 ## Finished
 
 - Change the theme from airspace-hugo
+- Created New Icon space
