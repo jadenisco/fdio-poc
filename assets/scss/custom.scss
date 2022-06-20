@@ -62,6 +62,8 @@
         background: #191b1f
     }    
 
+	.icon-text,
+	.inline-svg,
 	.post-full-content,
 	.post-card-content-link {
         color: hsla(0, 0%, 100%, .75);
@@ -240,7 +242,7 @@
 	text-align: left;
 }
   
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 	.media-content {
 	  overflow-x: auto;
 	}
