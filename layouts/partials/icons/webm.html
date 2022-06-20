@@ -1,0 +1,6 @@
+<i class="inline-svg">
+    {{- $fname := print "icons/youtube.svg" -}}
+    {{- $path := "<path" -}}
+    {{- $fill := "<path fill=\"currentColor\"" -}}
+    {{ replace (readFile $fname) $path $fill | safeHTML }}
+</i>
