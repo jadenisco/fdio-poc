@@ -213,3 +213,58 @@
 .featured-text .featured-title a:focus {
 	color: #26a8ed;
 }
+
+/* bulma */
+
+.media {
+	align-items: flex-start;
+	display: flex;
+	text-align: left;
+}
+  
+.media-left {
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 10px;
+	margin-right: 1rem;
+	flex-basis: auto;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.speaker-media-content {
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	text-align: left;
+}
+  
+@media screen and (max-width: 768px) {
+	.media-content {
+	  overflow-x: auto;
+	}
+}
+	
+.speaker-image.is-128x128 img {
+	height: 128px;
+	width: 128px;
+	max-width: 100%;
+}
+
+.speaker-avatar {
+    display: block;
+    overflow: hidden;
+    margin: 0 -4px;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #fff;
+	background: #e3e9ed;
+    border-radius: 2%;
+}
+
+.speaker-content {
+	font-size: 15px;
+	line-height: 24px;
+	margin: 0 0 10px;
+}
+   

@@ -6,23 +6,26 @@
 
 <article class="media">
   <figure class="media-left">
-    <p class="image is-128x128">
+    <p class="speaker-image is-128x128">
       {{ if $img }}
-      <img src="{{ $img }}">
+        <img src="{{ $img }}">
       {{ else }}
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAABCAQAAADEZGCcAAAADElEQVR42mNkGGAAAAECAALPi3q9AAAAAElFTkSuQmCC">
+      <i class="speaker-avatar">
+        {{ partial "icons/avatar.html" .}}
+      </i>
       {{end}}
     </p>
   </figure>
 
-  <div class="media-content">
-    <div class="content">
+  <div class="speaker-media-content">
+    <div class="speaker-content">
       <p>
         <strong>{{$name}}</strong>
         <br>
         {{ .Inner | markdownify }}
       </p>
     </div>
+
     <nav class="level is-mobile">
       <div class="level-left">
         {{ with $github }}

@@ -20,11 +20,12 @@ We'll present how applications can leverage userspace interfaces, what this allo
 
 ### Speakers
 
-{{< speaker name="Chris Tomkins - Developer Advocate @ Project Calico/Tigera" twitter="TomkinsDa" linkedin="cdtomkins" img="/images/chris_tomkins.jpeg">}}
+{{< speaker name="Chris Tomkins - Developer Advocate @ Project Calico/Tigera" twitter="TomkinsDa" linkedin="cdtomkins" imgsdhsgd="/images/chris_tomkins.jpeg" >}}
 Chris is a developer advocate at Project Calico/Tigera, where he champions user needs to support Project Calico’s users and contributor community.
 He has worked in networking since 2000. After realising that a per-device CLI is not a scalable solution for a large environment,
 he took an early interest in infrastructure-as-code approaches and large-scale automation and continues to have a special interest
 in pursuing technologies in these areas.
+
 {{< /speaker >}}
 
 {{< speaker name="Nathan Skrzypczak - Software Engineer @ Cisco" linkedin="sknat" twitter="skrnat" github="sknat" img="/images/nathan_skrzypczak.jpeg">}}
