@@ -1,10 +1,10 @@
-<span class="icon-text">WebM</span>
+<a href="http://twitter.com/{{ . }}">
     <span class="icon">
-        <i class="inline-svg">
-            {{- $fname := print "icons/youtube.svg" -}}
+        <i class="inline-svg" style="color: #1DA1F2">
+            {{- $fname := print "icons/twitter.svg" -}}
             {{- $path := "<path" -}}
             {{- $fill := "<path fill=\"currentColor\"" -}}
             {{ replace (readFile $fname) $path $fill | safeHTML }}
         </i>
     </span>
-</span>
+</a>

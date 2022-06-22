@@ -3,6 +3,9 @@
 {{ $github := .Get "github"}}
 {{ $twitter := .Get "twitter"}}
 {{ $linkedin := .Get "linkedin"}}
+{{ $icons := .Get "icons"}}
+
+<h2>{{ print $icons }}</h2>
 
 <article class="media">
   <figure class="media-left">
@@ -26,24 +29,14 @@
       </p>
     </div>
 
-    <nav class="level is-mobile">
-      <div class="level-left">
-        {{ with $github }}
-        <a class="level-item">
-          <span class="icon is-small"><a href="http://github.com/{{ . }}"><i class="fab fa-github"></i></a></span>
-        </a>
-        {{ end }}
-        {{ with $twitter }}
-          <a class="level-item">
-            <span class="icon is-small"><a href="http://twitter.com/{{ . }}"><i class="fab fa-twitter"></i></a></span>
-          </a>
-        {{ end }}
-        {{ with $linkedin }}
-          <a class="level-item">
-            <span class="icon is-small"><a href="https://linkedin.com/in/{{ . }}"><i class="fab fa-linkedin"></i></a></span>
-          </a>
-        {{ end }}
-      </div>
-    </nav>
+      {{ with $github }}
+        {{ partial "icons/github.html" .}}
+      {{ end }}
+      {{ with $twitter }}
+          {{ partial "icons/twitter.html" .}}
+      {{ end }}
+      {{ with $linkedin }}
+          {{ partial "icons/linkedin.html" .}}
+      {{ end }}
   </div>
 </article>

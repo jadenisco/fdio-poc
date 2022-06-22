@@ -1,19 +1,16 @@
 <a href={{ .url }}>
-    <span class="icon">
-        <span class="icon-text">{{ .text }}</span>
-        {{- $icon_with_path := print "layouts/partials/icons/" .icon ".html" -}}
-        {{- $partial_name := print "icons/" .icon ".html" -}}
-        {{ if os.FileExists $icon_with_path }}
-            {{ partial $partial_name .}}
-        {{ else }}
+    {{- $icon_with_path := print "layouts/partials/icons/" .icon ".html" -}}
+    {{- $partial_name := print "icons/" .icon ".html" -}}
+    {{ if os.FileExists $icon_with_path }}
+        {{ partial $partial_name .}}
+    {{ else }}
+        <span class="icon">
             <i class="inline-svg">
                 {{- $fname := print "icons/" .icon ".svg" -}}
                 {{- $path := "<path" -}}
                 {{- $fill := "<path fill=\"currentColor\"" -}}
                 {{ replace (readFile $fname) $path $fill | safeHTML }}
             </i>
-        {{ end }}
-    </span>
+        </span>
+    {{ end }}
 </a>
-<!--
--->
