@@ -25,7 +25,6 @@ These are some notes I have associated with this site.
 - Move content over from fd.io
   - Fix author list
     - Pass in list of icons using parameters
-  - Work on single webinar page
   - The Latest - Copy all the content and see what breaks
   - Documentation
   - Get Started
@@ -48,3 +47,4 @@ These are some notes I have associated with this site.
 - Created New Icon space
 - Add Webinar shortcodes
 - Handle no image case and add avatar
+- Work on single webinar page
