@@ -23,6 +23,8 @@ These are some notes I have associated with this site.
 ## To Do
 
 - Move content over from fd.io
+  - Make pagination 4 not 6
+  - Fix the copied latest articles
   - Fix author list
     - Pass in list of icons using parameters
   - The Latest - Copy all the content and see what breaks
