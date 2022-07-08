@@ -4,6 +4,7 @@ date: "2022-02-06"
 author: "Nathan Skrzypczak"
 icons: [{icon: "webm", url: "https://ftp.osuosl.org/pub/fosdem/2022/D.network/keep_appetite_for_the_stats.webm"}, {icon: "file-powerpoint", url:  "https://fosdem.org/2022/schedule/event/keep_appetite_for_the_stats/attachments/slides/4991/export/events/attachments/keep_appetite_for_the_stats/slides/4991/Fosdem_VPP_stats.pptx"}]
 bottomnavbutton: {text: "Read More"}
+categories: ["Calico", "Kubernetes"]
 ---
 
 ## Statistics consumption model with VPP

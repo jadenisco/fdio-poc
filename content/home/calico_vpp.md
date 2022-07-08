@@ -6,6 +6,7 @@ author: "Nathan Skrzypczak"
 feature_image: "/images/calico-vpp.png"
 topnavbutton: {text: "Download PDF", url: "https://drive.google.com/file/d/1pZh2BJlc5ZZYR6lnfH1KHQWKU4FgLti6/view?usp=sharing" }
 bottomnavbutton: {text: "Read More"}
+categories: ["Calico"]
 ---
 
 Kubernetes has become the de facto solution when it comes to container networking, providing rich functionalities and abstractions.  But some classes of workloads put a huge performance burden on these implementations.

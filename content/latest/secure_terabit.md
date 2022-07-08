@@ -8,6 +8,7 @@ type = "webinar"
 youtubeurl = "https://www.youtube.com/watch?v=x3IJvEcOgDQ"
 pdfurl =  "https://drive.google.com/file/d/1dqLOzGJLbU-gVEqHU0lmASjdY9bx2Dx0/view?usp=sharing"
 ppturl = "https://drive.google.com/file/d/1ApBCu93nB71udcomfDVFLCfD7DF_bKeL/view?usp=sharing"
+categories = ["Terabit"]
 +++
 
 Learn how FD.io is used to build secure Terabit NaaS cloud

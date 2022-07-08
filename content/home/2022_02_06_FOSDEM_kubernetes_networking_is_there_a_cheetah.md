@@ -6,6 +6,7 @@ author: "Nathan Skrzypczak"
 feature_image: "/images/kubernetes-networking.png"
 topnavbutton: {text: "Download PDF", url: "https://fosdem.org/2022/schedule/event/kubernetes_networking_is_there_a_cheetah/attachments/slides/5080/export/events/attachments/kubernetes_networking_is_there_a_cheetah/slides/5080/FOSDEM_2022_Calico_VPP_is_there_a_cheetah_within_your_Calico.pdf" }
 bottomnavbutton: {text: "Read More"}
+categories: ["Kubernetes"]
 ---
 
 **Is there a cheetah within your Calico?**

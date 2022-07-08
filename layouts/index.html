@@ -16,27 +16,38 @@
     </div>
 </header>
 
+<!-- This is per page -->
+<div style="color:grey; font-size:16px;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+<h3>{{ print .Site.Taxonomies.categories }}</h3>
+<h3>{{ print .Site.Data.l10n.widgets.categories }}</h3>
+<h3>{{ print .Site.Taxonomies.categories }}</h3>
+<ul>
+    {{ range $name, $items := .Site.Taxonomies.categories }}
+    <li>{{ print $name | title }}</li>
+    <li>{{ print $items }}</li>
+    {{ end }}
+</ul>
+
 <main id="site-main" class="site-main outer">
     <div class="inner posts">
         <div class="post-feed">
+            {{ partial "widgets" . }}
             {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
             {{ range $index, $element := $pages }}
-
-            {{ if isset .Params "showcontenthome" }}
-                {{ if eq .Params.showcontenthome true }}
+                {{ if isset .Params "showcontenthome" }}
+                    {{ if eq .Params.showcontenthome true }}
+                        {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
+                    {{ end }}
+                {{ else if isset .Params "showcontent" }}
+                    {{ if eq .Params.showcontent true }}
+                        {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
+                    {{ end }}
+                {{ else }}
                     {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
                 {{ end }}
-            {{ else if isset .Params "showcontent" }}
-                {{ if eq .Params.showcontent true }}
-                    {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
-                {{ end }}
-            {{ else }}
-                {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
-            {{ end }}
-            
             {{ end }} <!-- range -->
-        </div>
-    </div>
+        </div><!-- post-feed -->
+    </div><!-- inner -->
 </main>
 
 {{ end }}
