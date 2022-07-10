@@ -1,8 +1,12 @@
 <aside id="categories-3" class="widget">
   <h2 class="post-card-title">Categories:</h2>
     <ul class="post-card-excerpt">
-      <li>Customer Deployments</li>
-      <li>White Papers</li>
-      <li>Calico</li>
+    {{ range $name, $items := .Site.Taxonomies.categories }}
+    {{ with site.GetPage (printf "/%s/%s" "categories" ($name | urlize)) }}
+      <li>
+        <a href="{{ .Permalink }}">{{ $name | title }}</a> ({{ len $items }})
+      </li>
+    {{ end }}
+    {{ end }}
     </ul>
 </aside>

@@ -3,8 +3,6 @@ title: "Calico/VPP"
 description: "Kubernetes networking with boosters"
 date: "2021-07-22"
 author: "Nathan Skrzypczak"
-feature_image: "/images/calico-vpp.png"
-topnavbutton: {text: "Download PDF", url: "https://drive.google.com/file/d/1pZh2BJlc5ZZYR6lnfH1KHQWKU4FgLti6/view?usp=sharing" }
 bottomnavbutton: {text: "Read More"}
 categories: ["Calico"]
 ---
