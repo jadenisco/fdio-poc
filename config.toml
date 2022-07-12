@@ -17,9 +17,6 @@ theme = "hugo-casper3"
   subTitle = "An open-source project aimed at providing the world's fastest and most secure networking data plane through Vector Packet Processing (VPP)"
   mainSections = ["home", "pmc"]
 
-[params.widgets]
-    categories = true
-
 [params.slider]
   enable = false
   manual = true # Setting manual to true renders the slide selection to only those where the post has a slider=true option enabled

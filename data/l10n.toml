@@ -51,6 +51,7 @@
 	
 [widgets.categories]
     title = "Categories"
+    john = "John DeNisco"
 
 [widgets.recent_articles]
     title = "Recent Posts"
