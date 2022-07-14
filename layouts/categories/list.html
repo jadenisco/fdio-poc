@@ -5,8 +5,16 @@
 <header class="site-header">
     {{- partial "site-header.html" $ -}}
 
-    {{- partial "header-background.html" $ -}}
-    <a class="image-title">{{ .Param "image_title" }}</a>
+    {{ with .Site.Data.categories.background_image.url }}
+        <style type="text/css">
+            .cat-responsive-header-img {
+                background-image: url('{{.}}');
+            }
+        </style>
+        <div class="outer site-header-background cat-responsive-header-img">
+    {{ end }}
+
+    <a class="image-title">{{ with .Site.Data.categories.background_image.title }}{{ . }}{{ end }}</a>
         <div class="inner site-header-content">
             <h1 class="site-title">{{ .Title }}</h1>
             <h2 class="site-description">
