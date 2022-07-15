@@ -4,7 +4,7 @@ description: "Kubernetes networking with boosters"
 date: "2021-07-22"
 author: "Nathan Skrzypczak"
 bottomnavbutton: {text: "Read More"}
-categories: ["Calico"]
+categories: ["VPP"]
 ---
 
 Kubernetes has become the de facto solution when it comes to container networking, providing rich functionalities and abstractions.  But some classes of workloads put a huge performance burden on these implementations.

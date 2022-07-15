@@ -8,7 +8,7 @@ type = "webinar"
 youtubeurl = "https://www.youtube.com/watch?v=G67K28f5htg"
 pdfurl =  "https://drive.google.com/file/d/1pZh2BJlc5ZZYR6lnfH1KHQWKU4FgLti6/view?usp=sharing"
 ppturl = "https://drive.google.com/file/d/1c9KwZQFS98DX4q7JfXfjgi52P5nMgYtz/view?usp=sharing"
-categories = ["Calico"]
+categories = ["Calico", "VPP"]
 +++
 
 Kubernetes has become the de facto solution when it comes to container networking, providing rich functionalities and abstractions. 

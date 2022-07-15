@@ -12,6 +12,15 @@ These are some notes I have associated with this site.
 
 ## Comments
 
+- Simple Theme
+- custom.scss
+- Content can match categories
+- assets, js included slider
+- icons, not include icons are inline
+- blog and categories
+- Clean Up
+
+
 - Color Scheme
 
   For a color scheme, I like simple black and white and colors to the content. I think the black and white makes the colors in the images and articles stand out.
